@@ -1,0 +1,92 @@
+Initialize engine version: 5.6.2f1 (a2913c821e27)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   22.21.13.8205
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Unity\Unity_TankNetExample\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Unity\Unity_TankNetExample\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Unity\Unity_TankNetExample\test_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\Unity\Unity_TankNetExample\test_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Unity\Unity_TankNetExample\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Unity\Unity_TankNetExample\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Unity\Unity_TankNetExample\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Unity\Unity_TankNetExample\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Unity\Unity_TankNetExample\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Unity\Unity_TankNetExample\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Unity\Unity_TankNetExample\test_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\Unity\Unity_TankNetExample\test_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: D:\Unity\Unity_TankNetExample\test_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading D:\Unity\Unity_TankNetExample\test_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.028 seconds
+Platform assembly: D:\Unity\Unity_TankNetExample\test_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Unity\Unity_TankNetExample\test_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.226816 ms
+Best region found in PlayerPrefs. Connecting to: kr
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Entered Lobby !
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Operation failed: OperationResponse 225: ReturnCode: 32760 (No match found). Parameters: {}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+No rooms !
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Enter Room
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+PhotonView with ID 2004 has no method "Fire" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonView with ID 2004 has no method "Fire" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonView with ID 2004 has no method "Fire" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonView with ID 2004 has no method "Fire" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonView with ID 2004 has no method "Fire" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonView with ID 2004 has no method "Fire" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonView with ID 2004 has no method "Fire" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 6578 -> priority: 1 
+  Thread -> id: 657c -> priority: 1 
+  Thread -> id: 6580 -> priority: 1 
+  Thread -> id: 6584 -> priority: 1 

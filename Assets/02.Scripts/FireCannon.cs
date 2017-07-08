@@ -10,6 +10,8 @@ public class FireCannon : MonoBehaviour {
     private AudioClip fireSfx = null;
     private AudioSource sfx = null;
 
+    private PhotonView pv = null;
+
     private void Awake()
     {
         cannon = (GameObject)Resources.Load("Cannon");
@@ -17,6 +19,8 @@ public class FireCannon : MonoBehaviour {
         fireSfx = Resources.Load<AudioClip>("CannonFire");
 
         sfx = GetComponent<AudioSource>();
+        sfx.volume = 0.1f;
+        pv = GetComponent<PhotonView>();
     }
     // Use this for initialization
     void Start () {
@@ -25,12 +29,15 @@ public class FireCannon : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetMouseButtonDown(0))
+		if(pv.isMine && Input.GetMouseButtonDown(0))
         {
             fire();
+
+            pv.RPC("Fire", PhotonTargets.Others, null);
         }
 	}
 
+    [PunRPC]
     void fire()
     {
         sfx.PlayOneShot(fireSfx, 1.0f);
