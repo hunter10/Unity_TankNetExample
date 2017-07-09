@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TankDamage : MonoBehaviour {
 
@@ -12,6 +13,10 @@ public class TankDamage : MonoBehaviour {
 
     private int currHp = 0;
 
+    public Canvas hudCanvas;
+
+    public Image hpBar;
+
     private void Awake()
     {
         renderers = GetComponentsInChildren<MeshRenderer>();
@@ -19,6 +24,8 @@ public class TankDamage : MonoBehaviour {
         currHp = initHp;
 
         expEffect = Resources.Load<GameObject>("Large Explosion");
+
+        hpBar.color = Color.green;
     }
 
     private void OnTriggerEnter(Collider coll)
@@ -26,6 +33,16 @@ public class TankDamage : MonoBehaviour {
         if(currHp > 0 && coll.GetComponent<Collider>().tag == "CANNON")
         {
             currHp -= 20;
+
+            // 현재 생명치 백분율 = (현재 생명치) / (초기 생명치)
+            hpBar.fillAmount = (float)currHp / (float)initHp;
+
+            // 생명 수치에 따라 filled 이미지의 색상을 변경
+            if (hpBar.fillAmount <= 0.4f)
+                hpBar.color = Color.red;
+            else if (hpBar.fillAmount <= 0.6f)
+                hpBar.color = Color.yellow;
+            
             if(currHp <= 0)
             {
                 StartCoroutine(this.ExplosionTank());
@@ -36,11 +53,20 @@ public class TankDamage : MonoBehaviour {
     IEnumerator ExplosionTank()
     {
         Object effect = GameObject.Instantiate(expEffect, transform.position, Quaternion.identity);
+
         Destroy(effect, 3.0f);
+
+        hudCanvas.enabled = false;
 
         SetTankVisible(false);
 
         yield return new WaitForSeconds(3.0f);
+
+        hpBar.fillAmount = 1.0f;
+
+        hpBar.color = Color.green;
+
+        hudCanvas.enabled = true;
 
         currHp = initHp;
 
