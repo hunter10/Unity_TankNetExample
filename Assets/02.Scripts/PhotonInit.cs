@@ -11,6 +11,10 @@ public class PhotonInit : MonoBehaviour {
 
     public InputField roomName;
 
+    public GameObject scrollContetns;
+
+    public GameObject roomItem;
+
     [Tooltip("The maximum number of players per room. When a room is full, it can't be joined by new players, and so new room will be created")]
     public byte MaxPlayersPerRoom = 4;
 
@@ -109,7 +113,30 @@ public class PhotonInit : MonoBehaviour {
         Debug.Log("Create Room Failed = " + codeAndMsg[1]);
     }
 
-	private void OnGUI()
+    void OnReceivedRoomListUpdate()
+    {
+        foreach(GameObject obj in GameObject.FindGameObjectsWithTag("ROOM_ITEM"))
+        {
+            Destroy(obj);
+        }
+
+        foreach (RoomInfo _room in PhotonNetwork.GetRoomList())
+        {
+            Debug.Log(_room.name);
+
+            GameObject room = (GameObject)Instantiate(roomItem);
+
+            room.transform.SetParent(scrollContetns.transform, false);
+
+            RoomData roomData = room.GetComponent<RoomData>();
+            roomData.roomName = _room.name;
+            roomData.connectPlayer = _room.playerCount;
+            roomData.maxPlayers = _room.maxPlayers;
+            roomData.DispRoomData();
+        }
+    }
+
+    private void OnGUI()
 	{
 		GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
 	}

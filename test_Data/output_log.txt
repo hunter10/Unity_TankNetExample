@@ -21,14 +21,14 @@ Platform assembly: D:\Unity\Unity_TankNetExample\test_Data\Managed\UnityEngine.A
 Loading D:\Unity\Unity_TankNetExample\test_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
 Platform assembly: D:\Unity\Unity_TankNetExample\test_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading D:\Unity\Unity_TankNetExample\test_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.028 seconds
+- Completed reload, in  0.017 seconds
 Platform assembly: D:\Unity\Unity_TankNetExample\test_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Unity\Unity_TankNetExample\test_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.226816 ms
+UnloadTime: 0.976827 ms
 Best region found in PlayerPrefs. Connecting to: kr
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -41,52 +41,22 @@ Entered Lobby !
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Operation failed: OperationResponse 225: ReturnCode: 32760 (No match found). Parameters: {}
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-No rooms !
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 Enter Room
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.684361 ms
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 756.
+Total: 0.825390 ms (FindLiveObjects: 0.030046 ms CreateObjectMapping: 0.044169 ms MarkObjects: 0.353052 ms  DeleteObjects: 0.398122 ms)
 
 Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
  
 (Filename:  Line: 371)
 
-PhotonView with ID 2004 has no method "Fire" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: 
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-PhotonView with ID 2004 has no method "Fire" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: 
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-PhotonView with ID 2004 has no method "Fire" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: 
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-PhotonView with ID 2004 has no method "Fire" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: 
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-PhotonView with ID 2004 has no method "Fire" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: 
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-PhotonView with ID 2004 has no method "Fire" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: 
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-PhotonView with ID 2004 has no method "Fire" marked with the [PunRPC](C#) or @PunRPC(JS) property! Args: 
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 6578 -> priority: 1 
-  Thread -> id: 657c -> priority: 1 
-  Thread -> id: 6580 -> priority: 1 
-  Thread -> id: 6584 -> priority: 1 
+  Thread -> id: 2ca0 -> priority: 1 
+  Thread -> id: 19b4 -> priority: 1 
+  Thread -> id: 1560 -> priority: 1 
+  Thread -> id: 41e4 -> priority: 1 

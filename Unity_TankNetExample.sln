@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio for Mac
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity_TankNetExample.Plugins", "Unity_TankNetExample.Plugins.csproj", "{690E19FF-ECE5-29ED-4434-B274DF90F43F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity_TankNetExample", "Unity_TankNetExample.csproj", "{34151D33-E316-5F3D-D5DB-A4A5A9AA1355}"
