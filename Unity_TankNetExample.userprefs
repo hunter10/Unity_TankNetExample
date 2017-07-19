@@ -1,13 +1,17 @@
 ﻿<Properties StartupConfiguration="{34151D33-E316-5F3D-D5DB-A4A5A9AA1355}|">
   <MonoDevelop.Ide.ItemProperties.Unity__TankNetExample PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/02.Scripts/PhotonInit.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/02.Scripts/DataMgr.cs">
     <Files>
-      <File FileName="Assets/02.Scripts/PhotonInit.cs" Line="96" Column="55" />
-      <File FileName="Assets/02.Scripts/GameMgr.cs" Line="17" Column="95" />
+      <File FileName="Assets/02.Scripts/PhotonInit.cs" Line="29" Column="35" />
+      <File FileName="Assets/02.Scripts/GameMgr.cs" Line="44" Column="1" />
       <File FileName="Assets/02.Scripts/BillboardCanvas.cs" Line="19" Column="3" />
       <File FileName="Assets/02.Scripts/DisplayUserId.cs" Line="15" Column="1" />
-      <File FileName="Assets/02.Scripts/TankDamage.cs" Line="69" Column="34" />
-      <File FileName="Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs" Line="1631" Column="24" />
+      <File FileName="Assets/02.Scripts/TankDamage.cs" Line="128" Column="1" />
+      <File FileName="Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs" Line="2454" Column="1" />
+      <File FileName="Assets/02.Scripts/MouseHover.cs" Line="14" Column="25" />
+      <File FileName="Assets/02.Scripts/FireCannon.cs" Line="34" Column="11" />
+      <File FileName="Assets/02.Scripts/Cannon.cs" Line="15" Column="30" />
+      <File FileName="Assets/02.Scripts/DataMgr.cs" Line="84" Column="77" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

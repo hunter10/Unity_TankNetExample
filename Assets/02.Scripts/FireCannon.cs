@@ -29,6 +29,10 @@ public class FireCannon : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        // 현재 마우스 커서가 Canvas UI 항목 위에 있으면 Updata 함수를 빠져나감
+        //if (MouseHover.instance.isUIHover) return;
+
 		if(pv.isMine && Input.GetMouseButtonDown(0))
         {
             fire();
@@ -41,6 +45,7 @@ public class FireCannon : MonoBehaviour {
     void fire()
     {
         sfx.PlayOneShot(fireSfx, 1.0f);
-        Instantiate(cannon, firepos.position, firepos.rotation);
+        GameObject _cannon = (GameObject)Instantiate(cannon, firepos.position, firepos.rotation);
+        _cannon.GetComponent<Cannon>().playerId = pv.ownerId;
     }
 }

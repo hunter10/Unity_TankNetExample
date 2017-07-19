@@ -11,6 +11,9 @@ public class Cannon : MonoBehaviour {
     private CapsuleCollider _collider;
     private Rigidbody _rigidbody;
 
+    // 포탄을 발사한 플레이어의 ID 저장
+    public int playerId = -1;
+
 	// Use this for initialization
 	void Start () {
         _collider = GetComponent<CapsuleCollider>();

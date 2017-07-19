@@ -20,8 +20,13 @@ public class PhotonInit : MonoBehaviour {
 
     private void Awake()
     {
-        // 포톤 클라우드에 접속
-        PhotonNetwork.ConnectUsingSettings(version);
+        if (!PhotonNetwork.connected)
+        {
+            // 포톤 클라우드에 접속
+            PhotonNetwork.ConnectUsingSettings(version);
+        }
+
+        userId.text = GetUserId();
 
         roomName.text = "ROOM_" + Random.Range(0, 999).ToString("000");
     }
@@ -120,6 +125,10 @@ public class PhotonInit : MonoBehaviour {
             Destroy(obj);
         }
 
+        int rowCount = 0;
+        // 스크롤 영역 초기화 
+        scrollContetns.GetComponent<RectTransform>().sizeDelta = Vector2.zero;
+
         foreach (RoomInfo _room in PhotonNetwork.GetRoomList())
         {
             Debug.Log(_room.name);
@@ -133,7 +142,33 @@ public class PhotonInit : MonoBehaviour {
             roomData.connectPlayer = _room.playerCount;
             roomData.maxPlayers = _room.maxPlayers;
             roomData.DispRoomData();
+
+
+
+            // RoomItem의 Button 컴포넌트에 클릭 이벤트를 동적으로 연결 
+            roomData.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
+                {
+                    OnClickRoomItem(roomData.roomName);
+                }
+                                                                              );
+
+
+             
+            // Grid Layout Group 컴포넌트의 Constraint Count 값을 증가시킴 
+            scrollContetns.GetComponent<GridLayoutGroup>().constraintCount = ++rowCount;
+
+            // 스크롤 영역의 높이를 증가시킴
+            scrollContetns.GetComponent<RectTransform>().sizeDelta += new Vector2(0, 20);
         }
+    }
+
+    void OnClickRoomItem(string roomName)
+    {
+        PhotonNetwork.player.name = userId.text;
+
+        PlayerPrefs.SetString("USER_ID", userId.text);
+
+        PhotonNetwork.JoinRoom(roomName);
     }
 
     private void OnGUI()
