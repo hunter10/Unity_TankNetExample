@@ -1,0 +1,13 @@
+--
+-- 테이블 구조 'tb_score'
+--
+
+CREATE TABLE IF NOT EXISTS 'tb_score' (
+	'seq' int(11) NOT NULL AUTO_INCREMENT,
+	'user_seq' varchar(20) NOT NULL,
+	'user_name' varchar(20) NOT NULL,
+	'kill_count' int(11) NOT NULL DEFAULT '0',
+	'score_date' timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY ('seq'),
+	UNIQUE KEY 'user_id' ('user_id')
+) ENGINE = MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=6;
